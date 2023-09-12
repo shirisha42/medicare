@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.simplilearn.Testingmedicare.Testcase$test1">
+        <methods>
+          <include name="home"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test1 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test6">
+        <methods>
+          <include name="cart"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test6 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test3">
+        <methods>
+          <include name="registersup"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test3 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test2">
+        <methods>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test2 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test4">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test4 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test5">
+        <methods>
+          <include name="view"/>
+        </methods>
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test5 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

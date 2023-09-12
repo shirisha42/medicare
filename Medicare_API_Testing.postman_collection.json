@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "0b3a8c4f-d83e-435c-934a-95b3581beb50",
+		"name": "Medicare_API_Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28765855"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/medicare/show/all/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"medicare",
+						"show",
+						"all",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"validate body of response\", () => {\r",
+							"\t // Check if the response content type is JSON\r",
+							"\t   const contentTypeHeader = pm.response.headers.get(\"Content-Type\");\r",
+							"\t  if (contentTypeHeader && contentTypeHeader.includes(\"text/html\")) {\r",
+							"\t      // Handle the case of an HTML response\r",
+							"       console.log(\"Received an HTML response. Content-Type: \" + contentTypeHeader);\r",
+							"\t\t  // Add any additional assertions or handling specific to HTML responses here\r",
+							"\t\t  } else if (contentTypeHeader && contentTypeHeader.includes(\"application/json\")) {\r",
+							"\t\t\t// Handle the case of a JSON response,\r",
+							"\t\t\t\t   try {\r",
+							"\t\t\t\t\t\t\t            var jsonData = pm.response.json();\r",
+							"\t\t\t\t\t\t\t           pm.expect(jsonData.name).to.eql(\"Antipyretics\");\r",
+							"\t\t\t\t\t\t\t     } catch (error) {\r",
+							"\t\t\t\t\t\t\t            // Handle the case where JSON parsing fails\r",
+							"\t\t\t\t\t\t           console.log(\"Error parsing JSON response: \" + error.message);\r",
+							"\t\t\t\t\t\t\t        pm.test(\"JSON Parsing Error\", function () {\r",
+							"\t\t\t\t\t\t\t                pm.expect.fail(\"Error parsing JSON response\");\r",
+							"\t\t\t\t\t\t\t           });\r",
+							"\t\t\t\t\t\t\t        }\r",
+							"\t\t\t\t\t\t\t    } else {\r",
+							"\t\t\t\t\t\t\t        // Handle other content types or unknown responses\r",
+							"\t\t\t\t\t\t       console.log(\"Received an unexpected response. Content-Type: \" + contentTypeHeader);\r",
+							"\t\t\t\t\t\t\t        // Add handling or assertions for other content types here\r",
+							"\t\t\t\t\t\t\t  }\r",
+							"\t\t\t\t\t\t\t});\r",
+							"\t\t\t\t\t\t\t"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/medicare/show/category/1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"medicare",
+						"show",
+						"category",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

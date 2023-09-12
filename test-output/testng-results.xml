@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-11T17:08:42 IST" name="Suite" finished-at="2023-09-11T17:10:14 IST" duration-ms="91297">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:08:42 IST" name="Test" finished-at="2023-09-11T17:10:14 IST" duration-ms="91297">
+      <class name="com.simplilearn.Testingmedicare.Testcase$test6">
+        <test-method signature="cart()[pri:6, instance:com.simplilearn.Testingmedicare.Testcase$test6@17f62e33]" started-at="2023-09-11T17:09:54 IST" name="cart" finished-at="2023-09-11T17:10:14 IST" duration-ms="19605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test6 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test5">
+        <test-method signature="view()[pri:5, instance:com.simplilearn.Testingmedicare.Testcase$test5@74ea2410]" started-at="2023-09-11T17:09:35 IST" name="view" finished-at="2023-09-11T17:09:54 IST" duration-ms="18555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- view -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test5 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test4">
+        <test-method signature="login()[pri:4, instance:com.simplilearn.Testingmedicare.Testcase$test4@25ce9dc4]" started-at="2023-09-11T17:09:29 IST" name="login" finished-at="2023-09-11T17:09:35 IST" duration-ms="6374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test4 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test3">
+        <test-method signature="registersup()[pri:3, instance:com.simplilearn.Testingmedicare.Testcase$test3@173ed316]" started-at="2023-09-11T17:09:18 IST" name="registersup" finished-at="2023-09-11T17:09:29 IST" duration-ms="11068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registersup -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test3 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test2">
+        <test-method signature="register()[pri:2, instance:com.simplilearn.Testingmedicare.Testcase$test2@69e153c5]" started-at="2023-09-11T17:09:03 IST" name="register" finished-at="2023-09-11T17:09:18 IST" duration-ms="14551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test2 -->
+      <class name="com.simplilearn.Testingmedicare.Testcase$test1">
+        <test-method signature="home()[pri:1, instance:com.simplilearn.Testingmedicare.Testcase$test1@7526515b]" started-at="2023-09-11T17:08:42 IST" name="home" finished-at="2023-09-11T17:09:03 IST" duration-ms="20948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- com.simplilearn.Testingmedicare.Testcase$test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
